@@ -1,6 +1,16 @@
 import React from 'react';
-import {Text} from 'react-native';
+import ScoreSection from './ScoreSection';
+import {Grid, Col} from 'react-native-easy-grid';
 
-const ScoreCard = () => <Text>ScoreCard</Text>
+const ScoreCard = () => (
+  <Grid>
+    <Col>
+      <ScoreSection label="Upper" />
+    </Col>
+    <Col>
+      <ScoreSection label="Lower" />
+    </Col>
+  </Grid>
+)
 
 export default ScoreCard;
